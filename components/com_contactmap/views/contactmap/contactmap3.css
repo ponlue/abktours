@@ -1,0 +1,53 @@
+.contactmap_marqueur span {
+	font-weight:bold;
+	font-size: 150%;
+}
+
+.contactmap_marqueur img {
+	margin: 10px 10px 0px 0px;
+	float: left;
+}
+
+.contactmap_marqueur h4 {
+	font-style: italic;
+	font-weight: bolder;
+}
+
+.contactmap_detail h4{
+	font-style: italic;
+	font-weight: lighter;
+	text-transform: none;
+}
+
+.contactmap_taille1{
+	width: 200px;
+}
+
+.contactmap_taille2{
+	width: 200px;
+}
+
+#contactmap_print h1{
+	text-align: center;
+}
+
+#contactmap_print h4{
+	font-style: italic;
+	font-weight: bolder;
+}
+
+.main_image{
+	width: 300px;
+}
+
+#contactmap_print label{
+	font-weight: bold;
+}
+
+.colonne1 {
+	width:50%;
+}
+
+.colonne2 {
+	width:50%;
+}

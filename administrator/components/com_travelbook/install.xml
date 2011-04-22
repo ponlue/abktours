@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE project>
+<!-- 
+ * "TRAVELbook - JOOMLA! on Tour"
+ *
+ * @version         $Id: install.xml 2 2010-04-13 13:37:46Z WEB $
+ * @copyright       Copyright 2009-2010, $Author: WEB $
+ * @license         GNU General Public License (GNU GPL) GPLv2, 
+ *                  - see http://www.demo-page.de/en/license-conditions.html
+ *    This program is free software: you can redistribute it and/or modify
+ *    it under the terms of the GNU General Public License as published by
+ *    the Free Software Foundation, either version 3 of the License, or
+ *    (at your option) any later version.
+ *
+ *    This program is distributed in the hope that it will be useful,
+ *    but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. 
+ *    See the GNU General Public License for more details.
+ *
+ *    You should have received a copy of the GNU General Public License
+ *    along with this program. If not, see <http://www.gnu.org/licenses/>.
+ *
+ * @link            http://www.demo-page.de
+ * @package         TRAVELbook Component
+ * @revision        $Revision: 2 $
+ * @lastmodified    $Date: 2010-04-13 15:37:46 +0200 (Di, 13 Apr 2010) $
+-->
+
+<install type="component" version="1.5.0">
+	<name>TRAVELbook</name>
+	<!-- The following elements are optional and free of formatting conttraints -->
+	<author>Peter Höcherl</author>
+	<authorEmail>mail@demo-page.de</authorEmail>
+	<authorUrl>http://www.demo-page.de</authorUrl>
+	<copyright>(c) Peter Höcherl</copyright>
+	<license>http://www.demo-page.de/de/erweiterungen/lizenz</license>
+	<!--  The version string is recorded in the components table -->
+    <creationDate>April 2010</creationDate>
+	<version>1.0.2</version>
+    <build>130410</build>
+
+	<!-- The description is optional and defaults to the name -->
+	<description>
+	  <![CDATA[
+	    <img src="components/com_travelbook/assets/images/icon-48-travelbook-config.png" alt="" width="48" height="48" />
+        <h3>TRAVELbook Component</h3>
+	    <p>Providing a Travel Booking Engine.</p>
+	    <p><a target="_blank" href="http://www.demo-page.de">Travelbook Project Homepage</a></p>
+	    <p>&copy; Peter H&ouml;cherl -- <a target="_blank" href="http://www.peter-kommt-mit.de">www.peter-kommt-mit.de</a> - Unkonventionell Reisen</p>
+	  ]]>
+    </description>
+
+	<!-- Site Main File Copy Section -->
+	<files folder="site">
+	<!-- assets -->
+		<filename>assets/css/form.css</filename>
+		<filename>assets/css/index.html</filename>
+		<filename>assets/css/livevalidation.css</filename>
+		<filename>assets/css/travelbook.css</filename>
+
+		<filename>assets/images/exclamation.png</filename>
+		<filename>assets/images/index.html</filename>
+		<filename>assets/images/notice-alert.png</filename>
+		<filename>assets/images/notice-download.png</filename>
+		<filename>assets/images/notice-info.png</filename>
+		<filename>assets/images/notice-note.png</filename>
+		<filename>assets/images/ok.png</filename>
+		<filename>assets/images/ok_disabled.png</filename>
+		<filename>assets/images/ok_rot.png</filename>
+		<filename>assets/images/pdf.gif</filename>
+		<filename>assets/images/spacer.gif</filename>
+
+		<filename>assets/js/index.html</filename>
+		<filename>assets/js/livevalidation_standalone.js</filename>
+		<filename>assets/js/summary.js</filename>
+		<filename>assets/js/travelbook.js</filename>
+		
+		<filename>assets/index.html</filename>
+
+	<!-- controllers -->
+		<filename>controllers/index.html</filename>
+		<filename>controllers/travelbook.php</filename>
+
+	<!-- helpers -->
+		<filename>helpers/index.html</filename>
+		<filename>helpers/travelbook.php</filename>
+
+	<!-- models -->
+		<filename>models/client.php</filename>
+		<filename>models/client_season.php</filename>
+		<filename>models/guests.php</filename>
+		<filename>models/index.html</filename>
+		<filename>models/mail.php</filename>
+		<filename>models/travelbook.php</filename>
+
+	<!-- views -->
+	<!-- travelbook -->
+	<!-- tmpl -->
+	<!-- js -->
+		<filename>views/travelbook/tmpl/js/ajax.js</filename>
+		<filename>views/travelbook/tmpl/js/index.html</filename>
+
+		<filename>views/travelbook/tmpl/index.html</filename>
+		<filename>views/travelbook/tmpl/travelbook.php</filename>
+		<filename>views/travelbook/tmpl/travelbook_ajax.php</filename>
+
+		<filename>views/travelbook/index.html</filename>
+		<filename>views/travelbook/view.html.php</filename>
+
+		<filename>views/index.html</filename>
+
+		<filename>controller.php</filename>
+		<filename>index.html</filename>
+		<filename>travelbook.php</filename>
+	</files>
+
+	<languages folder="language/site">
+		<language tag="de-DE">de-DE.com_travelbook.ini</language>
+		<language tag="en-GB">en-GB.com_travelbook.ini</language>
+	</languages>
+
+	<install>
+		<sql>
+			<file charset="utf8" driver="mysql">install.sql</file>
+		</sql>
+	</install>
+	<uninstall>
+		<sql>
+			<file charset="utf8" driver="mysql">uninstall.sql</file>
+		</sql>
+	</uninstall>	
+
+	<!-- Site Main Media File Copy Section -->
+	<media folder="media" destination="com_travelbook">
+			<filename>index.html</filename>
+	</media>
+
+	<administration>
+		<!-- Administration Menu Section -->
+
+        <languages folder="language/admin">
+			<language tag="de-DE">de-DE.com_travelbook.ini</language>
+			<language tag="en-GB">en-GB.com_travelbook.ini</language>
+		</languages>
+
+        <menu link="option=com_travelbook&amp;task=travelbooks.show" img="components/com_travelbook/assets/images/icon-16-travelbook.png">TRAVELbook</menu>
+			<submenu>
+				<!-- Note that all & must be escaped to &amp; for the file to be valid XML and be parsed by the installer -->
+				<menu link="option=com_travelbook&amp;task=travelbooks.show" img="components/com_travelbook/assets/images/icon-16-travelbook.png">TB Start</menu>
+				<menu link="option=com_travelbook&amp;task=tours.show" img="components/com_travelbook/assets/images/icon-16-tours.png">TB Tours</menu>
+				<menu link="option=com_travelbook&amp;task=seasons.show" img="components/com_travelbook/assets/images/icon-16-seasons.png">TB Seasons</menu>
+				<menu link="option=com_travelbook&amp;task=services.show" img="components/com_travelbook/assets/images/icon-16-services.png">TB Services</menu>
+				<menu link="option=com_travelbook&amp;task=hotels.show" img="components/com_travelbook/assets/images/icon-16-hotels.png">TB Accomodation</menu>
+				<menu link="option=com_travelbook&amp;task=feeders.show" img="components/com_travelbook/assets/images/icon-16-feeders.png">TB Departures</menu>
+				<menu link="option=com_travelbook&amp;task=clients.show" img="components/com_travelbook/assets/images/icon-16-clients.png">TB Clients</menu>
+				<menu link="option=com_travelbook&amp;task=categories.show" img="components/com_travelbook/assets/images/icon-16-categories.png">TB Categories</menu>
+				<menu link="option=com_travelbook&amp;task=mails.show" img="components/com_travelbook/assets/images/icon-16-mails.png">TB Mails</menu>
+			</submenu>
+		
+		<!-- Administration Main File Copy Section -->
+		<!-- Note the folder attribute: This attribute describes the folder
+			to copy FROM in the package to install therefore files copied
+			in this section are copied from /admin/ in the package -->
+		<files folder="admin">
+		<!-- Site Main File Copy Section -->
+	
+		<!-- assets -->
+		<!-- css -->
+			<filename>assets/css/calendar.css</filename>
+			<filename>assets/css/index.html</filename>
+			<filename>assets/css/travelbook.css</filename>
+	
+		<!-- images -->
+			<filename>assets/images/body-div.png</filename>
+			<filename>assets/images/calendar-hilite.gif</filename>
+			<filename>assets/images/calendar-icon.gif</filename>
+			<filename>assets/images/calendar-next.gif</filename>
+			<filename>assets/images/calendar-prev.gif</filename>
+			<filename>assets/images/calendar-td.gif</filename>
+			<filename>assets/images/calendar-valid.gif</filename>
+			<filename>assets/images/calendar.png</filename>
+			<filename>assets/images/i-heart-ny-icon.gif</filename>
+			<filename>assets/images/icon-16-categories.png</filename>
+			<filename>assets/images/icon-16-clients.png</filename>
+			<filename>assets/images/icon-16-feeders.png</filename>
+			<filename>assets/images/icon-16-hotels.png</filename>
+			<filename>assets/images/icon-16-mails.png</filename>
+			<filename>assets/images/icon-16-seasons.png</filename>
+			<filename>assets/images/icon-16-services.png</filename>
+			<filename>assets/images/icon-16-tours.png</filename>
+			<filename>assets/images/icon-16-travelbook.png</filename>
+			<filename>assets/images/icon-48-categories.png</filename>
+			<filename>assets/images/icon-48-clients.png</filename>
+			<filename>assets/images/icon-48-feeders.png</filename>
+			<filename>assets/images/icon-48-hotels.png</filename>
+			<filename>assets/images/icon-48-mails.png</filename>
+			<filename>assets/images/icon-48-seasons.png</filename>
+			<filename>assets/images/icon-48-services.png</filename>
+			<filename>assets/images/icon-48-tours.png</filename>
+			<filename>assets/images/icon-48-travelbook.png</filename>
+			<filename>assets/images/icon-48-travelbook-config.png</filename>
+			<filename>assets/images/index.html</filename>
+	
+		<!-- js -->
+			<filename>assets/js/calendar.js</filename>
+			<filename>assets/js/index.html</filename>
+	
+			<filename>assets/index.html</filename>
+	
+		<!-- controllers -->
+			<filename>controllers/categories.php</filename>
+			<filename>controllers/clients.php</filename>
+			<filename>controllers/feeders.php</filename>
+			<filename>controllers/hotels.php</filename>
+			<filename>controllers/index.html</filename>
+			<filename>controllers/mails.php</filename>
+			<filename>controllers/seasons.php</filename>
+			<filename>controllers/services.php</filename>
+			<filename>controllers/tours.php</filename>
+			<filename>controllers/travelbooks.php</filename>
+	
+		<!-- modells -->
+			<filename>models/categories.php</filename>
+			<filename>models/clients.php</filename>
+			<filename>models/feeders.php</filename>
+			<filename>models/hotels.php</filename>
+			<filename>models/index.html</filename>
+			<filename>models/mails.php</filename>
+			<filename>models/seasons.php</filename>
+			<filename>models/seasons_feeders.php</filename>
+			<filename>models/services.php</filename>
+			<filename>models/tours.php</filename>
+			<filename>models/tours_hotels.php</filename>
+			<filename>models/tours_services.php</filename>
+			<filename>models/travelbooks.php</filename>
+	
+		<!-- tables -->
+			<filename>tables/categories.php</filename>
+			<filename>tables/client.php</filename>
+			<filename>tables/client_season.php</filename>
+			<filename>tables/feeder.php</filename>
+			<filename>tables/guests.php</filename>
+			<filename>tables/hotel.php</filename>
+			<filename>tables/index.html</filename>
+			<filename>tables/mail.php</filename>
+			<filename>tables/season.php</filename>
+			<filename>tables/seasons_feeders.php</filename>
+			<filename>tables/service.php</filename>
+			<filename>tables/tour.php</filename>
+			<filename>tables/tours_hotels.php</filename>
+			<filename>tables/tours_services.php</filename>
+	
+		<!-- views -->
+		<!-- categories -->	
+		<!-- tmpl -->	
+			<filename>views/categories/tmpl/default.php</filename>
+			<filename>views/categories/tmpl/detail.php</filename>
+			<filename>views/categories/tmpl/index.html</filename>
+	
+			<filename>views/categories/index.html</filename>
+			<filename>views/categories/view.html.php</filename>
+			
+		<!-- clients -->	
+		<!-- tmpl -->	
+			<filename>views/clients/tmpl/default.php</filename>
+			<filename>views/clients/tmpl/detail.php</filename>
+			<filename>views/clients/tmpl/index.html</filename>
+	
+			<filename>views/clients/index.html</filename>
+			<filename>views/clients/view.html.php</filename>
+			
+		<!-- feeders -->	
+		<!-- tmpl -->	
+			<filename>views/feeders/tmpl/default.php</filename>
+			<filename>views/feeders/tmpl/detail.php</filename>
+			<filename>views/feeders/tmpl/index.html</filename>
+	
+			<filename>views/feeders/index.html</filename>
+			<filename>views/feeders/view.html.php</filename>
+	
+		<!-- hotels -->	
+		<!-- tmpl -->	
+			<filename>views/hotels/tmpl/default.php</filename>
+			<filename>views/hotels/tmpl/detail.php</filename>
+			<filename>views/hotels/tmpl/index.html</filename>
+	
+			<filename>views/hotels/index.html</filename>
+			<filename>views/hotels/view.html.php</filename>
+	
+		<!-- mails -->	
+		<!-- tmpl -->	
+			<filename>views/mails/tmpl/default.php</filename>
+			<filename>views/mails/tmpl/detail.php</filename>
+			<filename>views/mails/tmpl/index.html</filename>
+	
+			<filename>views/mails/index.html</filename>
+			<filename>views/mails/view.html.php</filename>
+	
+		<!-- seasons -->	
+		<!-- tmpl -->	
+			<filename>views/seasons/tmpl/default.php</filename>
+			<filename>views/seasons/tmpl/detail.php</filename>
+			<filename>views/seasons/tmpl/index.html</filename>
+	
+			<filename>views/seasons/index.html</filename>
+			<filename>views/seasons/view.html.php</filename>
+	
+		<!-- seasons_feeders -->
+		<!-- tmpl -->	
+			<filename>views/seasons_feeders/tmpl/default.php</filename>
+			<filename>views/seasons_feeders/tmpl/index.html</filename>
+	
+			<filename>views/seasons_feeders/index.html</filename>
+			<filename>views/seasons_feeders/view.html.php</filename>
+	
+		<!-- services -->
+		<!-- tmpl -->	
+			<filename>views/services/tmpl/default.php</filename>
+			<filename>views/services/tmpl/detail.php</filename>
+			<filename>views/services/tmpl/index.html</filename>
+	
+			<filename>views/services/index.html</filename>
+			<filename>views/services/view.html.php</filename>
+	
+		<!-- tours -->
+		<!-- tmpl -->	
+			<filename>views/tours/tmpl/addseason.php</filename>
+			<filename>views/tours/tmpl/addservices.php</filename>
+			<filename>views/tours/tmpl/default.php</filename>
+			<filename>views/tours/tmpl/detail.php</filename>
+			<filename>views/tours/tmpl/index.html</filename>
+	
+			<filename>views/tours/index.html</filename>
+			<filename>views/tours/view.html.php</filename>
+			
+		<!-- tours_hotels -->
+		<!-- tmpl -->	
+			<filename>views/tours_hotels/tmpl/default.php</filename>
+			<filename>views/tours_hotels/tmpl/index.html</filename>
+	
+			<filename>views/tours_hotels/index.html</filename>
+			<filename>views/tours_hotels/view.html.php</filename>
+	
+		<!-- tours_services -->
+		<!-- tmpl -->	
+			<filename>views/tours_services/tmpl/default.php</filename>
+			<filename>views/tours_services/tmpl/index.html</filename>
+	
+			<filename>views/tours_services/index.html</filename>
+			<filename>views/tours_services/view.html.php</filename>
+	
+		<!-- travelbooks -->
+		<!-- tmpl -->	
+			<filename>views/travelbooks/tmpl/default.php</filename>
+			<filename>views/travelbooks/tmpl/index.html</filename>
+			
+			<filename>views/travelbooks/index.html</filename>
+			<filename>views/travelbooks/view.html.php</filename>
+	
+			<filename>config.xml</filename>
+			<filename>controller.php</filename>
+			<filename>index.html</filename>
+			<filename>install.sql</filename>
+			<filename>travelbook.php</filename>
+			<filename>uninstall.sql</filename>
+			<filename>version.php</filename>
+		</files>		
+
+	</administration>
+
+</install>

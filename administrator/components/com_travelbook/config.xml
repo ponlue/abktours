@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/**
+ * "TRAVELbook - JOOMLA! on Tour"
+ *
+ * @version         $Id: config.xml 2 2010-04-13 13:37:46Z WEB $
+ * @copyright       Copyright 2009-2010, $Author: WEB $
+ * @license         GNU General Public License (GNU GPL) GPLv2, 
+ *                  - see http://www.demo-page.de/en/license-conditions.html
+ *    This program is free software: you can redistribute it and/or modify
+ *    it under the terms of the GNU General Public License as published by
+ *    the Free Software Foundation, either version 3 of the License, or
+ *    (at your option) any later version.
+ *
+ *    This program is distributed in the hope that it will be useful,
+ *    but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. 
+ *    See the GNU General Public License for more details.
+ *
+ *    You should have received a copy of the GNU General Public License
+ *    along with this program. If not, see <http://www.gnu.org/licenses/>.
+ *
+ * @link            http://www.demo-page.de
+ * @package         TRAVELbook Component
+ * @revision        $Revision: 2 $
+ * @lastmodified    $Date: 2010-04-13 15:37:46 +0200 (Di, 13 Apr 2010) $
+*/
+-->
+
+<travelbook_config>
+  <name>TRAVELbook Configuration</name>
+  <author>Peter Höcherl</author>
+  <creationDate>December 2009</creationDate>
+  <copyright>(C) Peter Höcherl</copyright>
+  <license>http://www.demo-page.de</license>
+  <authorEmail>mail@demo-page.de</authorEmail>
+  <authorUrl>www.demo-page.de</authorUrl>
+  <version>1.1</version>
+  <description>TB DESC CONFIGURATION</description>
+
+  <params>
+	<param name="title" type="radio" default="0" label="PARAM TB title" description="DESC TB title">
+	  <option value="1">Yes</option>
+	  <option value="0">No</option>
+	</param>
+
+	<param name="image" type="radio" default="0" label="PARAM TB Image" description="DESC TB Image">
+	  <option value="1">Yes</option>
+	  <option value="0">No</option>
+	</param>
+
+    <param name="@spacer" type="spacer" default="" label="" description="" />
+
+	<param name="contact" type="radio" default="0" label="PARAM TB Contact" description="DESC TB Contact">
+	  <option value="1">Yes</option>
+	  <option value="0">No</option>
+	</param>
+    <param type="text" name="telefon" size="20" label="PARAM TB telefon" description="DESC TB TELEFON" />
+
+    <param name="@spacer" type="spacer" default="" label="" description="" />
+
+	<param name="currency" type="radio" default="euro" label="PARAM TB currency" description="DESC TB currency">
+	  <option value="euro">€</option>
+	  <option value="pound">£</option>
+	  <option value="yen">¥</option>
+	  <option value="sonst">PARAM TB other</option>
+	</param>
+    <param type="text" name="other" default="$" size="20" label="PARAM TB other" description="DESC TB other" />
+
+    <param name="@spacer" type="spacer" default="" label="" description="" />
+
+	<param name="feeder" type="radio" default="0" label="PARAM TB Feeder" description="DESC TB Feeder">
+	  <option value="1">Yes</option>
+	  <option value="0">No</option>
+	</param>
+
+	<param name="hotel_select" type="radio" default="0" label="PARAM TB hotel select" description="DESC TB hotel select">
+	  <option value="1">Yes</option>
+	  <option value="0">No</option>
+	</param>
+
+    <param name="@spacer" type="spacer" default="" label="" description="" />
+
+	<param name="hotel" type="radio" default="0" label="PARAM TB hotel" description="DESC TB hotel">
+	  <option value="1">Yes</option>
+	  <option value="0">No</option>
+	</param>
+
+    <param name="@spacer" type="spacer" default="" label="" description="" />
+
+	<param name="question" type="radio" default="0" label="PARAM TB Last Question" description="DESC TB Last Question">
+	  <option value="1">Yes</option>
+	  <option value="0">No</option>
+	</param>
+	
+    <param name="@spacer" type="spacer" default="" label="" description="" />
+
+	<param name="arb" type="menuitem" default="0" label="PARAM TB ARB" description="DESC TB ARB" state="1"/>
+	<param name="policy" type="menuitem" default="0" label="PARAM TB private policy" description="DESC TB private policy" state="1"/>
+
+    <param name="@spacer" type="spacer" default="" label="" description="" />
+
+	<param name="arb_pdf" type="filelist" default="0" label="PARAM TB SELECT ARB" description="DESC TB SELECT ARB" directory="media/com_travelbook" filter="" exclude="html" stripext="" hide_default="true"  />
+	<param name="policy_pdf" type="filelist" default="0" label="PARAM TB SELECT PP" description="DESC TB SELECT PP" directory="media/com_travelbook" filter="" exclude="html" stripext="" hide_default="true" />
+
+    <param name="@spacer" type="spacer" default="" label="" description="" />
+
+	<param name="redirect" type="menuitem" default="0" label="PARAM TB redirect" description="DESC TB redirect" state="1"/>
+
+  </params>
+</travelbook_config>

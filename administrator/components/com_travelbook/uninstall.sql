@@ -1,0 +1,13 @@
+DROP TABLE IF EXISTS `#__tb_clients`;
+DROP TABLE IF EXISTS `#__tb_clt_dat`;
+DROP TABLE IF EXISTS `#__tb_dat_prt`;
+DROP TABLE IF EXISTS `#__tb_feeder`;
+DROP TABLE IF EXISTS `#__tb_guests`;
+DROP TABLE IF EXISTS `#__tb_hotels`;
+DROP TABLE IF EXISTS `#__tb_journey`;
+DROP TABLE IF EXISTS `#__tb_jrn_htl`;
+DROP TABLE IF EXISTS `#__tb_jrn_srv`;
+DROP TABLE IF EXISTS `#__tb_mails`;
+DROP TABLE IF EXISTS `#__tb_season`;
+DROP TABLE IF EXISTS `#__tb_services`;
+DELETE FROM `#__categories` WHERE (`section`='com_tour_details' OR `section`='com_service_details' OR `section`='com_service_type' OR `section`='com_hotel_details') ;

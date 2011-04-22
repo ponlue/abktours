@@ -1,0 +1,271 @@
+/**
+ * "TRAVELbook - JOOMLA! on Tour" - http://www.demo-page.de
+ *
+ * @version         $Id: site assets travelbook.css 001 2010-01-22 12:00:00$
+ * @copyright       Copyright 2009-2010, Peter H&ouml;cherl
+ * @license         GNU General Public License (GNU GPL) GPLv2, 
+ *                  - see http://www.demo-page.de/en/license-conditions.html *
+ *    This program is free software: you can redistribute it and/or modify
+ *    it under the terms of the GNU General Public License as published by
+ *    the Free Software Foundation, either version 3 of the License, or
+ *    (at your option) any later version.
+ *
+ *    This program is distributed in the hope that it will be useful,
+ *    but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *    GNU General Public License for more details.
+ *
+ *    You should have received a copy of the GNU General Public License
+ *    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ * @link            http://www.demo-page.de
+ * @package         TRAVELbook Component
+ * @revision        $Revision: 2 $
+ * @lastmodified    $Date: 2010-04-13 15:37:46 +0200 (Di, 13 Apr 2010) $
+*/
+
+/*** CSS Document ***/
+/* form.css */
+
+ul.tabs-nav {
+    color : #FFF;
+    list-style-type: square;
+    list-style-position: inside;
+	padding: 1.6em;
+}
+
+ul.tabs-nav li {
+    float: left;
+    margin: 0.4em 0;
+    padding: 0 9px 0 0;
+}
+
+ul.tabs-nav li a {
+    margin-left: -5px;
+}
+
+ul.tabs-nav li.current, li.current a {
+	color: #C00;
+    list-style-image: url(../../assets/images/ok_rot.png);
+/*    font-weight: bold;
+*/
+	background: transparent;
+}
+
+ul.tabs-nav li.inactive {
+    color: #000;
+    list-style-image: url(../../assets/images/ok_disabled.png);
+/*    font-weight: bold;
+*/
+	background: transparent;
+}
+
+ul.tabs-nav li.active {
+    color: #393;
+    list-style-image: url(../../assets/images/ok.png);
+    font-weight: bold;
+	background: transparent;
+}
+
+#ajax_bild {
+    margin: 0;
+/*
+    padding: 0 0 104px 0;
+*/
+}
+#ajax_sub_title, #ajax_page2, #ajax_page3, #ajax_page4, #ajax_page5 {
+	padding-top: 2em;
+ }
+
+#ajax_season {
+	padding-top: 1em;
+ }
+
+#ajax_status {
+    font-size: 88%;
+ }
+
+#ajax_paxe {
+    margin-top: 11px;
+ }
+ 
+#ajax_sub_total {
+    float: right;
+    font-weight: bold;
+  }
+
+#ajax_hotels {
+    margin-top: 12px;
+  }
+
+#ajax_weiter {
+    float: right;
+    margin-top: 10px;
+    margin-right: 5px;
+  }
+
+#ajax_back {
+    float: left;
+    margin-top: 10px;
+/*    margin-left: -10px; */
+}
+
+#box_services_links, #box_guests_links, #box_contact_links {
+	float: left;
+	width: 49%;
+ }
+
+#box_services_rechts, #box_guests_rechts, #box_contact_rechts {
+	float: right;
+	width: 50%;
+ }
+
+#box_services {
+clear: both;
+}
+
+#booking_email, #ajax_seite2 {
+   margin-bottom: 1em; 
+  }
+
+label.extra {
+/*
+  margin: 0 0 0 8px;
+  position: relative; 
+  left: 50px;
+*/
+ }
+ 
+label.comment {
+  text-align: left;
+  width: 100%; 
+  font-weight: bold;
+ }
+
+tr.season_selected {
+	background-color: #CCCCCC;
+	color: #333333;
+ }
+
+thead.tb {
+	background-color: #ffff33;
+	color: #121936;
+ }
+
+th.tb_right, .tb_right {
+	text-align: right;
+ }
+
+th.tb_left, .tb_left {
+	text-align: left;
+ }
+
+.button_right {
+	float: right;
+  }
+  
+.button_left {
+	float: left;
+  }
+
+#mainForm_1, #mainForm_2, #mainForm_3, #mainForm_4, #mainForm_5 {
+	clear: both;
+ }
+ 
+#ajax_img {
+	float: right;
+	width: 100%;
+ }
+
+.tb_small {
+	font-size: 88%;
+}
+
+.tb_services {
+	font-weight: bold;
+	color: #182E7A;
+	margin-top: 9px;
+	margin-bottom: 4px;
+ }
+
+.tb_services_start {
+	font-weight: bold;
+	color: #182E7A;
+	margin-bottom: 4px;
+ }
+
+form .summary_lbl {
+    position: absolute;
+    width:  auto;
+    margin: 0 0 0 16px; 
+  }
+
+form .summary {
+    margin-right: 16px;
+    font-weight: bold;
+  }
+
+form .summary_mid {
+    width: auto;
+    position: relative;
+    left: 220px;
+    font-weight: bold;
+  }
+
+form .summary_okay {
+    width: auto;
+    background: url(/images/icons/ok.png) left no-repeat;
+    margin-left: 220px;
+    padding-left: 16px;
+  }
+
+form .traveller {
+    width: auto; 
+    position: absolute;
+    left: 160px;
+}
+
+#betrag {
+	margin: 6px 0 0 160px; 
+}
+
+.betrag_rechts {
+    float: right; 
+}
+
+#betrag_links {
+        clear: right;
+        float: left;
+	margin: 6px 0 0 10px; 
+}
+
+#ajax_achtung {
+	float: right;
+ }
+ 
+#ajax_next .error, #ajax_achtung .error {
+	color: #CC0000;
+	font-weight: bold;
+ }
+ 
+#ajax_next .error li {
+	list-style-type: none;
+ }
+ 
+#tb_footer {
+	float: right;
+ }
+
+#ajax_season table {
+	width: 100%;
+ }
+
+#validate, #validate5 {
+margin-left: 64px;
+color: #CC0000;
+}
+
+#ajax_page2 h2, #ajax_page3 h2, #ajax_page4 h2, #ajax_page5 h2, #ajax_sub_title h2 {
+color:#C00;
+font-size:166.57%;
+}

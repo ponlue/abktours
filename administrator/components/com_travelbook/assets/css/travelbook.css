@@ -1,0 +1,532 @@
+/**
+ * "TRAVELbook - JOOMLA! on Tour" - http://www.demo-page.de
+ *
+ * @version         $Id: admin assets css travelbook.css 001 2010-01-22 12:00:00$
+ * @copyright       Copyright 2009-2010, Peter H&ouml;cherl
+ * @license         GNU General Public License (GNU GPL) GPLv2, 
+ *                  - see http://www.demo-page.de/en/license-conditions.html *
+ *    This program is free software: you can redistribute it and/or modify
+ *    it under the terms of the GNU General Public License as published by
+ *    the Free Software Foundation, either version 3 of the License, or
+ *    (at your option) any later version.
+ *
+ *    This program is distributed in the hope that it will be useful,
+ *    but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *    GNU General Public License for more details.
+ *
+ *    You should have received a copy of the GNU General Public License
+ *    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ * @link            http://www.demo-page.de
+ * @package         TRAVELbook Component
+ * @revision        $Revision: 2 $
+ * @lastmodified    $Date: 2010-04-13 15:37:46 +0200 (Di, 13 Apr 2010) $
+*/
+
+.rot {
+	color: #FF0000 !important;
+	font-weight: bold;
+ }
+ 
+table.toolbar td.divider {
+	border-right : 1px solid #999999 !important;
+	width: 0 !important;
+ }
+  
+#joomfish ul {
+	margin: 0px 0px 0px 0px;
+	padding: 1px 0px 1px 20px;
+	list-style: url(../images/dot.png);
+	border: none;
+}
+
+table.translateparams{
+	width:100%;
+}
+td.translateparams span.editlinktip{
+/*	display:none;*/
+}
+
+#manage_results div {
+	border: 1px solid #dddddd;
+	width: 98%;
+	height: 100%;
+}
+div.icon-48-home {
+	background: url(../images/icon-48-home.png) no-repeat left;
+}
+div.icon-48-config {
+	background: url(../images/icon-48-config.png) no-repeat left;
+}
+div.icon-48-tour {
+	background: url(../images/icon-48-tours.png) no-repeat left;
+}
+div.icon-48-season {
+	background: url(../images/icon-48-seasons.png) no-repeat left;
+}
+div.icon-48-feeder {
+	background: url(../images/icon-48-feeders.png) no-repeat left;
+}
+div.icon-48-hotel {
+	background: url(../images/icon-48-hotels.png) no-repeat left;
+}
+div.icon-48-service {
+	background: url(../images/icon-48-services.png) no-repeat left;
+}
+div.icon-48-client {
+	background: url(../images/icon-48-clients.png) no-repeat left;
+}
+div.icon-48-category {
+	background: url(../images/icon-48-categories.png) no-repeat left;
+}
+div.icon-48-mail {
+	background: url(../images/icon-48-mails.png) no-repeat left;
+}
+
+div.icon-48-client {
+	background: url(../images/icon-48-clients.png) no-repeat left;
+}
+
+table.adminform a.toolbar {
+   display: block;
+	white-space: nowrap;
+	border: 1px solid #fbfbfb;
+	padding: 1px 5px;
+	cursor: pointer;
+	text-align: center;
+	width: 32px;
+}
+
+table.adminform a.toolbar:hover {
+	border-left: 1px solid #eee;
+	border-top: 1px solid #eee;
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	text-decoration: none;
+	color: #0B55C4;
+}
+
+
+table.adminform a.toolbar span { 
+	float: none; 
+	width: 32px; 
+	height: 32px; 
+	margin: 0 auto; 
+	display: block;
+}
+
+/***
+Travelbook
+***/
+
+#side {
+	color: #006;
+	padding-top:.8em;
+	margin-bottom:10px;
+	margin-left: 1px;
+	}
+
+#side .user_icon a, #side .user_icon a:hover,
+#side .user_icon_disabled a, #side .user_icon_disabled a:hover {
+	text-decoration:none;
+	color:#333;
+	}
+
+#side .user_icon a:hover {
+	color:#0084b5;
+	}
+
+#side .user_icon {
+/*	padding:0 0 .8em;
+*/	padding: 16px;
+	border-top: 1px solid #999;
+	border-bottom: 1px solid #999;
+	}
+
+#side .active {
+	padding: 16px;
+	background-color: #FFC;
+	}
+
+#side .check {
+	padding: 16px 8px 16px 8px;
+	margin-left: -1px;
+	border-top: 1px solid #999;
+	border-bottom: 1px solid #999;
+	border-left: 1px solid #999;
+	border-right: 1px solid #999;
+	}
+
+#side .filter {
+	padding: 17px 0px 17px 0px;
+	margin-left: -1px;
+	border-left: 1px solid #999;
+	}
+
+#side .check>* {
+	vertical-align:middle;
+	padding:0;
+	}
+
+#side .user_icon_disabled {
+	padding:0 0 .8em;
+	}
+
+.side_thumb {
+	height:31px;
+	width:31px;
+	}
+
+.verified-profile {
+	height:2.8em;
+	}
+
+.verified-profile a {
+	background:transparent url('http://static.twitter.com/images/verified/verified.png') no-repeat scroll left center;
+	color:#333;
+	display:block;
+	font-family:Georgia,serif;
+	font-size:1.1em;
+	padding:5px 0 5px 28px;
+	}
+
+.verified-profile a:hover {
+	text-decoration:none;
+	color:#0084b5;
+	}
+
+#side .user_icon img {
+	padding-right:.8em;
+	vertical-align:middle;
+	}
+
+#me_name {
+	font-size:1.35em;
+	vertical-align:middle;
+	}
+
+#side p.promotion {
+	margin-bottom:1em;
+	}
+
+.in-page-link {
+	outline:none;
+	}
+
+#side #trends,#side #saved_searches {
+	width:198px;
+	overflow:hidden;
+	}
+
+ul.sidebar-menu li .side-tab-ajax {
+	vertical-align:top;
+	float:right;
+	display:none;
+	margin-right:1em;
+	}
+
+ul.sidebar-menu span.stat_count {
+	margin-top:-0.15em;
+	right:14px;
+	font-family:Georgia,serif;
+	float:right;
+	margin-right:14px;
+	font-size:1.2em!important -moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	background-color:transparent;
+	padding:0 .1em;
+	}
+
+span.link-title {
+	float:left;
+	}
+
+ul.sidebar-menu li {
+	padding-top:1px;
+	}
+
+ul.sidebar-menu li a {
+	cursor:pointer!important;
+	display:block;
+	clear:both;
+	padding:.5em 0 .5em 14px;
+	margin-right:-1px;
+	outline:none;
+	background-image:none;
+	}
+
+ul.sidebar-menu li a span {
+	display:inline-block;
+	width:150px;
+	}
+
+ul#primary_nav.sidebar-menu li a span {
+	display:inline;
+	width:auto;
+	}
+
+ul.sidebar-menu li a span.stat_count {
+	display:block;
+	}
+
+ul.sidebar-menu li.loading a {
+	background:#edffe5 url('http://static.twitter.com/images/spinner.gif') no-repeat 171px .5em;
+	}
+
+ul.sidebar-menu li.loading a span.stat_count {
+	display:none!important;
+	}
+
+ul.sidebar-menu li a:hover {
+	background-color:#edffe5;
+	text-decoration:none;
+	}
+
+ul.sidebar-menu li.active a {
+	font-weight:bold;
+	color:#333;
+	background-color:#edffe5;
+	}
+
+#side ul.sidebar-actions {
+	margin:.2em 14px 1em;
+	}
+
+#custom_search {
+	padding:.4em 0;
+	margin:1px 0 3px;
+	}
+
+#side div#custom_search.active {
+	background-color:#edffe5;
+	}
+
+#sidebar_search input {
+	border-color:#b4b4b4 #ccc #ccc #b4b4b4;
+	border-style:solid none solid solid;
+	border-width:1px 0 1px 1px;
+	font-size:1em;
+	padding:.4em;
+	width:136px!important;
+	margin:.25em 0 .25em 12px;
+	outline:none;
+	}
+
+.ie #sidebar_search input {
+	position:relative;
+	width:145px!important;
+	}
+
+.ie #sidebar_search .submit {
+	position:relative;
+	top:0;
+	left:-10px;
+	width:8px;
+	margin-left:0;
+	margin-right:0;
+	}
+
+#sidebar_search_submit {
+	background:url('http://static.twitter.com/images/nav_search_submit.png') -2px 0!important;
+	}
+
+#sidebar_search_submit:hover {
+	background:url('http://static.twitter.com/images/nav_search_submit.png') -2px -25px!important;
+	}
+
+#sidebar_search_submit:active {
+	background:url('http://static.twitter.com/images/nav_search_submit.png') -2px -50px!important;
+	}
+
+#sidebar_search_submit.loading,#sidebar_search_submit.loading:hover,#sidebar_search_submit.loading:active {
+	background:#eee url('http://static.twitter.com/images/spinner.gif') no-repeat 5px 5px!important;
+	}
+
+#sidebar_search input,#sidebar_search_submit {
+	padding-top:5px!important;
+	padding-bottom:5px!important;
+	border-color:#999!important;
+	vertical-align:middle;
+	}
+
+#sidebar_search .submit {
+	-moz-border-radius-bottomright:3px;
+	-moz-border-radius-topright:3px;
+	-webkit-border-radius-bottom-right:3px;
+	-webkit-border-radius-top-right:3px;
+	background-color:#EEE;
+	background-position:center top;
+	border-style:solid;
+	border-width:1px;
+	cursor:pointer;
+	padding:.4em .9em;
+	}
+
+#saved_searches ul {
+	margin-bottom:3px;
+	}
+
+h2.sidebar-title {
+	padding:.2em 14px .2em 14px;
+	font-size:1.05em;
+	font-weight:normal;
+	}
+
+h2.sidebar-title span {
+	opacity:.7;
+	}
+
+.ie h2.sidebar-title span {
+	filter:alpha(opacity=70);
+	}
+
+#side .collapsible h2.sidebar-title {
+	background:transparent url('http://static.twitter.com/images/toggle_up_dark.png') no-repeat right center;
+	width:157px;
+	}
+
+#side .collapsible.collapsed h2.sidebar-title {
+	background:transparent url('http://static.twitter.com/images/toggle_down_dark.png') no-repeat right center;
+	}
+
+#side .collapsible.loading h2.sidebar-title {
+	background:transparent url('http://static.twitter.com/images/spinner.gif') no-repeat center right!important;
+	}
+
+#side .collapsible a.fetch-contents {
+	display:none;
+	}
+
+#side .collapsible h2.sidebar-title:hover {
+	cursor:pointer;
+	}
+
+#side .collapsed .xref,#side .collapsed .sidebar-menu {
+	display:none;
+	}
+
+#side #following #following_list {
+	padding:5px 10px 5px 14px;
+	}
+
+#side #following .xref {
+	margin-left:5px;
+	float:none;
+	}
+
+#side #following #friends_view_all {
+	font-size:.9em;
+	padding:0 14px;
+	}
+
+#side a.indented-link {
+	margin:.5em 14px 1em;
+	}
+
+#home #rssfeed,#search #rssfeed,#profile #rssfeed,#home #rssfeed .timeline-rss,#search #rssfeed .search-rss,#profile #rssfeed .profile-rss {
+	display:block;
+	}
+
+#rssfeed,#rssfeed .timeline-rss,#rssfeed .search-rss {
+	display:none;
+	}
+
+.rss {
+	background-image:url('http://static.twitter.com/images/rss.gif');
+	}
+
+#side hr {
+	display:block;
+	border:0;
+	height:1px;
+	margin:.5em 14px;
+	opacity:.7;
+	background:#bddcad;
+	color:#bddcad;
+	}
+
+.ie #side hr {
+	width:170px;
+	margin:0 14px;
+	filter:alpha(opacity=70);
+	}
+
+.notify {
+	text-align:center;
+	line-height:1;
+	padding:5px 0;
+	background-repeat:no-repeat;
+	background-position:left center;
+	margin-bottom:8px;
+	}
+
+.notify div {
+	background-color:#edffe5;
+	font-size:.9em;
+	margin:0 12px 0 24px;
+	padding:10px 5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	}
+
+#side .actions {
+	border:1px solid #87bc44;
+	margin:10px -3px;
+	}
+
+#side .actions small {
+	font-size:.9em;
+	}
+
+#side .actions a {
+	padding-left:7px;
+	}
+
+.side_thumb {
+	height:31px;
+	width:31px;
+	}
+
+#side .user_icon {
+	height:30px;
+	padding-right:.8em;
+	padding-left:.8em;
+	border-right: 1px solid #999;
+	}
+
+#side .user_icon_disabled {
+	height:30px;
+	}
+
+#side .user_icon>* {
+	vertical-align:middle;
+	padding:0;
+	}
+
+#side .user_icon_disabled>* {
+	vertical-align:middle;
+	padding:0;
+	}
+
+#side .user_icon img {
+		}
+
+#side .user_icon_disabled img {
+	float:left;
+	padding-right:.8em;
+    opacity:0.2;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";	
+	}
+
+#me_name {
+	font-size:1.35em;
+	line-height:30px;
+	float:left;
+	width: 160px;
+	}
+.smallgrey {
+	color: #ccc;
+	padding-top: 11px;
+	text-align: center;
+ }

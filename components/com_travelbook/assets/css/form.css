@@ -1,0 +1,169 @@
+/* form.css */
+
+form {  /* set width in form, not fieldset (still takes up more room w/ fieldset width */
+  font:88% verdana,arial,sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+form fieldset {
+  clear: both;
+  padding: 8px;
+  margin: 0;
+  background: transparent;
+  border: solid 1px #CCC !important;
+}
+
+form fieldset legend {
+	color: #039;
+	font-size:1.1em;
+ }
+
+form label.extra, .extra { 
+	display: block;
+	float: left; 
+	width: 110px; 
+	padding: 2px 0 0; 
+	margin: 5px 8px 0 0;
+	text-align: right; 
+}
+
+form label.question { 
+	display: block; 
+	float: left; 
+	width: 180px; 
+	padding: 0; 
+	margin: 0px 8px 4px 0;
+	text-align: right; 
+}
+
+form fieldset label:first-letter { /* use first-letter pseudo-class to underline accesskey, note that */
+	text-decoration: underline;    /* Firefox 1.07 WIN and Explorer 5.2 Mac don't support first-letter */
+                                    /* pseudo-class on legend elements, but do support it on label elements */
+                                    /* we instead underline first letter on each label element and accesskey */
+                                    /* each input. doing only legends would  lessens cognitive load */
+                                   /* opera breaks after first letter underlined legends but not labels */
+}
+
+.travelbook input, .travelbook select {
+	width: auto;
+	border: 1px solid #CCCCCC;
+	margin-bottom: 4px;
+ }
+
+.travelbook select.page1 {
+	width: 320px;
+ }
+
+.travelbook input.datum {
+	width: 64px;
+ }
+
+.travelbook textarea {
+	height: 133px;
+	width: 99%;
+	height: 200px;
+	background: #EFEFEF none repeat scroll 0 0;
+ }
+
+.travelbook input.hausnummer {
+	width: 16px;
+ }
+
+.travelbook input.street {
+	width: auto;
+ }
+
+.travelbook input.cip {
+	width: 36px;
+ }
+ 
+.travelbook input.city {
+	width: 96px;
+ }
+
+form input.inputbox {
+	float: left;
+	padding: 2px;
+ }
+
+form input.button {
+	margin: 0 4px 0 4px;
+ }
+
+form .summary {
+	width:  auto;
+	margin: 0 0 0 8px; 
+	display: block;
+ }
+
+form .summary_okay {
+	width:  auto; 
+	position: relative;
+/*	margin: 0 0 0 140px;
+    padding-left: 18px;
+*/
+    background: url(../../assets/images/ok.png) left no-repeat;
+}
+
+form .traveller {
+	display: block;  /* block float the labels to left column, set a width */
+	float: left; 
+	width: auto; 
+	padding: 2px 0 0 0; 
+	margin: 5px 0 0 40px; /* set top margin same as form input - textarea etc. elements */
+}
+
+#betrag {
+	margin: 6px 0 0 160px; 
+}
+
+.betrag_rechts {
+        float: right; 
+	margin: 6px 180px 0 0; 
+}
+
+#betrag_links {
+        clear: right;
+        float: left;
+	margin: 6px 0 0 10px; 
+}
+
+form input#reset {
+	margin-left:0px; /* set margin-left back to zero on reset button (set above) */
+}
+
+textarea {
+	overflow: auto;
+/*	margin: 5px 0 0 10px;
+*/
+	margin: 5px 0 0 0px;
+	width: auto;
+	border: 1px solid #CCCCCC;
+ }
+
+form small {
+	display: block;
+	padding: 1px 0 1px 3px;
+	font-size: 88%;
+}
+
+label.required {
+    font-weight: bold;
+  } /* uses class instead of div, more efficient */
+
+form br {
+	clear:left; /* setting clear on inputs didn't work consistently, so brs added for degrade */
+}
+
+#seo {
+	padding: 60px 0 0 0;
+	text-align: center; 
+	margin: auto;
+  }
+
+table.hotel { width: 100%; }
+
+input.question {
+	width: 252px;
+ }

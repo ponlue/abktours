@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- $Id: default.xml 10880 2008-08-31 17:51:53Z willebil $ -->
+<metadata>
+    <layout title="CONTACTMAP_VUE_MAP">
+        <message>
+            <![CDATA[CONTACTMAP_VUE_MAP_DESC]]>
+        </message>
+    </layout>
+    <state>
+        <name>CONTACTMAP_VUE_MAP</name>
+        <description>CONTACTMAP_VUE_MAP_DESC</description>
+        <params>
+            <param name="affichage_colonne" type="list" default="1" label="CONTACTMAP_AFF_TYPE" description="CONTACTMAP_AFF_TYPE_DESC">
+                <option value="0">CONTACTMAP_LIGNE</option>
+                <option value="1">CONTACTMAP_COLONNE</option>
+            </param>
+            <param name="disable_https" type="list" default="1" label="CONTACTMAP_HTTPS" description="CONTACTMAP_HTTPS_DESC">
+                <option value="0">Disable</option>
+                <option value="1">Enable</option>
+            </param>
+        </params>
+    </state>
+</metadata>

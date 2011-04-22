@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	<params addpath="/administrator/components/com_contactmap/elements">
+
+<param name="@contactmaphead" type="contactmaphead" default="CONTACTMAP_MAP_ZONE" />
+
+        <param name="contactmap_height" type="text" default="" label="CONTACTMAP_HEIGHT" size="10" description="CONTACTMAP_HEIGHT_DESC" />
+        <param name="contactmap_auto" type="radio" default="0" label="CONTACTMAP_AUTO" description="CONTACTMAP_AUTO_DESC">
+            <option value="0">NO</option>
+            <option value="1">YES</option>
+        </param>
+		<param name="@contactmapphead" type="contactmapmap" label="CONTACTMAP_MAP_CENTRE" description="CONTACTMAP_MAP_CENTRE_DESC" />
+        <param name="contactmap_centre_lat" type="hidden" default="" label="CONTACTMAP_CENTRE_LAT" size="20" description="CONTACTMAP_CENTRE_LAT_DESC" />
+        <param name="contactmap_centre_lng" type="hidden" default="" label="CONTACTMAP_CENTRE_LNG" size="20" description="CONTACTMAP_CENTRE_LNG_DESC" />
+        <param name="contactmap_zoom" type="list" default="10" label="CONTACTMAP_ZOOM" description="CONTACTMAP_ZOOM_DESC">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+            <option value="16">16</option>
+            <option value="17">17</option>
+            <option value="18">18</option>
+        </param>
+        <param name="contactmap_zoom_lightbox_carte" type="list" default="0" label="CONTACTMAP_ZOOM_LIGHTBOX_CARTE" description="CONTACTMAP_ZOOM_LIGHTBOX_CARTE_DESC">
+            <option value="0">CONTACTMAP_SAME_ZOOM</option>
+            <option value="100">CONTACTMAP_MAP_ZOOM</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+            <option value="16">16</option>
+            <option value="17">17</option>
+            <option value="18">18</option>
+        </param>
+        <param name="contactmap_zoom_lightbox_imprimer" type="list" default="0" label="CONTACTMAP_ZOOM_LIGHTBOX_IMPRIMER" description="CONTACTMAP_ZOOM_LIGHTBOX_IMPRIMER_DESC">
+            <option value="0">CONTACTMAP_SAME_ZOOM</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+            <option value="16">16</option>
+            <option value="17">17</option>
+            <option value="18">18</option>
+        </param>
+        <param name="contactmap_width_bulle_contactmap" type="text" default="" label="CONTACTMAP_LARGEUR_BULLE_CONTACTMAP" size="10" description="CONTACTMAP_LARGEUR_BULLE_CONTACTMAP_DESC" />
+        <param name="contactmap_taille_bulle_cesure" type="text" default="" label="CONTACTMAP_TAILLE_CESURE" size="10" description="CONTACTMAP_TAILLE_CESURE_DESC" />
+
+<param name="@contactmaphead" type="contactmaphead" default="CONTACTMAP_MAP_OPPTION" />
+        
+        <param name="contactmap_photo_icon" type="radio" default="0" label="CONTACTMAP_MARHER_OR_PHOTO" description="CONTACTMAP_MARHER_OR_PHOTO_DESC">
+            <option value="0">CONTACTMAP_MARKER</option>
+            <option value="1">CONTACTMAP_PICTURE</option>
+        </param>
+        <param name="contactmap_itineraire" type="radio" default="0" label="CONTACTMAP_ITINERAIRE" description="CONTACTMAP_ITINERAIRE_DESC">
+            <option value="0">Hide</option>
+            <option value="1">Show</option>
+        </param>
+        <param name="contactmap_traffic" type="radio" default="1" label="CONTACTMAP_TRAFFIC" description="CONTACTMAP_TRAFFIC_DESC">
+            <option value="0">Hide</option>
+            <option value="1">Show</option>
+        </param>
+        <param name="contactmap_streetView" type="radio" default="1" label="CONTACTMAP_STREET_VIEW" description="CONTACTMAP_STREET_VIEW_DESC">
+            <option value="0">Hide</option>
+            <option value="1">Show</option>
+        </param>
+        <param name="contactmap_height_sv" type="text" default="" label="CONTACTMAP_HEIGHT_SV" size="10" description="CONTACTMAP_HEIGHT_SV_DESC" />
+        
+        <param name="@spacer" type="spacer" default="" label="" description="" />
+        
+        <param name="contactmap_normal" type="radio" default="1" label="CONTACTMAP_NORMAL" description="CONTACTMAP_NORMAL_DESC">
+            <option value="0">Hide</option>
+            <option value="1">Show</option>
+        </param>
+        <param name="contactmap_satellite" type="radio" default="1" label="CONTACTMAP_SATELLITE" description="CONTACTMAP_SATELLITE_DESC">
+            <option value="0">Hide</option>
+            <option value="1">Show</option>
+        </param>
+        <param name="contactmap_hybrid" type="radio" default="1" label="CONTACTMAP_HYBRID" description="CONTACTMAP_HYBRID_DESC">
+            <option value="0">Hide</option>
+            <option value="1">Show</option>
+        </param>
+        <param name="contactmap_physic" type="radio" default="1" label="CONTACTMAP_PHYSIC" description="CONTACTMAP_PHYSIC_DESC">
+            <option value="0">Hide</option>
+            <option value="1">Show</option>
+        </param>
+        <param name="contactmap_vertical" type="radio" default="1" label="CONTACTMAP_VERTICAL" description="CONTACTMAP_VERTICAL_DESC">
+            <option value="0">No</option>
+            <option value="1">YES</option>
+        </param>
+        <param name="contactmap_choix_affichage_carte" type="list" default="10" label="CONTACTMAP_AFFICHAGE_CARTE" description="CONTACTMAP_AFFICHAGE_CARTE_DESC">
+            <option value="1">CONTACTMAP_NORMAL</option>
+            <option value="2">CONTACTMAP_SATELLITE</option>
+            <option value="3">CONTACTMAP_HYBRID</option>
+            <option value="4">CONTACTMAP_PHYSIC</option>
+        </param>
+        <param name="contactmap_mapcontrol" type="radio" default="1" label="CONTACTMAP_MAPCONTROL" description="CONTACTMAP_MAPCONTROL_DESC">
+            <option value="0">Hide</option>
+            <option value="1">Show</option>
+        </param>
+        <param name="contactmap_scalecontrol" type="radio" default="1" label="CONTACTMAP_SCALECONTROL" description="CONTACTMAP_SCALECONTROL_DESC">
+            <option value="0">Hide</option>
+            <option value="1">Show</option>
+        </param>
+        <param name="contactmap_mousewheel" type="radio" default="1" label="CONTACTMAP_MOUSEWHEEL" description="CONTACTMAP_MOUSEWHEEL_DESC">
+            <option value="0">NO</option>
+            <option value="1">YES</option>
+        </param>
+        <param name="contactmap_plus_info" type="radio" default="1" label="CONTACTMAP_PLUS_INFOS" description="CONTACTMAP_PLUS_INFOS_DESC">
+            <option value="0">Hide</option>
+            <option value="1">Show</option>
+        </param>
+        
+<param name="@contactmaphead" type="contactmaphead" default="CONTACTMAP_FORM_OPPTION" />
+        
+        <param name="contactmap_afficher_horaires_prix" type="radio" default="1" label="CONTACTMAP_AFFICHER_HORAIRES_PRIX" description="CONTACTMAP_AFFICHER_HORAIRES_PRIX_DESC">
+            <option value="0">Hide</option>
+            <option value="1">Show</option>
+        </param>
+        <param name="contactmap_hauteur_img" type="text" default="" label="CONTACTMAP_HAUTEUR_IMG" size="10" description="CONTACTMAP_HAUTEUR_IMG_DESC" />
+        <param name="contactmap_afficher_captcha" type="radio" default="1" label="CONTACTMAP_AFFICHER_CAPTCHA" description="CONTACTMAP_AFFICHER_CAPTCHA_DESC">
+            <option value="0">Hide</option>
+            <option value="1">Show</option>
+        </param>
+
+<param name="@contactmaphead" type="contactmaphead" default="CONTACTMAP_DIVERS" />
+        
+        <param name="contactmap_geoXML" type="text" default="" label="CONTACTMAP_GEO_XML" size="60" description="CONTACTMAP_GEO_XML_DESC" />
+
+        <param name="@spacer" type="spacer" default="" label="" description="" />
+        
+        <param name="contactmap_licence" type="radio" default="1" label="CONTACTMAP_LICENCE" description="CONTACTMAP_LICENCE">
+            <option value="0">Hide</option>
+            <option value="1">Show</option>
+        </param>
+    </params>
+</config>

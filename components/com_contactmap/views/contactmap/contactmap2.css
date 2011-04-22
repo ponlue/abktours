@@ -1,0 +1,15 @@
+#fpgmap {
+	visibility : hidden !important;
+}
+
+#boxlink { color: #a5a5a5;
+	text-decoration: none;
+	cursor: default;
+	margin-left: 33px;
+}
+ 
+#boxlink.highlight { color: #0000cd;
+	text-decoration: underline;
+	cursor: pointer;
+}
+ 

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- $Id: default.xml 10880 2008-08-31 17:51:53Z willebil $ -->
+<metadata>
+    <layout title="CONTACTMAP_VUE_CONTACT">
+        <message>
+            <![CDATA[CONTACTMAP_VUE_CONTACT_DESC]]>
+        </message>
+    </layout>
+    <state>
+        <name>CONTACTMAP_VUE_CONTACT</name>
+        <description>CONTACTMAP_VUE_CONTACT_DESC</description>
+        <url addpath="/administrator/components/com_contact/elements">
+            <param name="id" type="contact" default="" label="CONTACTMAP_SELECT_CONTACT" description="CONTACTMAP_SELECT_CONTACT_DESC" />
+        </url>
+        <params>
+            <param name="affichage_colonne" type="list" default="1" label="CONTACTMAP_AFF_TYPE" description="CONTACTMAP_AFF_TYPE_DESC">
+                <option value="0">CONTACTMAP_LIGNE</option>
+                <option value="1">CONTACTMAP_COLONNE</option>
+            </param>
+            <param name="disable_https" type="list" default="1" label="CONTACTMAP_HTTPS" description="CONTACTMAP_HTTPS_DESC">
+                <option value="0">Disable</option>
+                <option value="1">Enable</option>
+            </param>
+        </params>
+		<advanced>
+			<param name="show_adresse" type="radio" default="1" label="CONTACTMAP_ADRESSE" description="CONTACTMAP_NAME_DESC">
+				<option value="0">Hide</option>
+				<option value="1">Show</option>
+			</param>
+			<param name="show_cp" type="radio" default="1" label="CONTACTMAP_CODEPOSTAL" description="CONTACTMAP_NAME_DESC">
+				<option value="0">Hide</option>
+				<option value="1">Show</option>
+			</param>
+			<param name="show_city" type="radio" default="1" label="CONTACTMAP_VILLE" description="CONTACTMAP_NAME_DESC">
+				<option value="0">Hide</option>
+				<option value="1">Show</option>
+			</param>
+			<param name="show_state" type="radio" default="1" label="CONTACTMAP_DEPARTEMENT" description="CONTACTMAP_NAME_DESC">
+				<option value="0">Hide</option>
+				<option value="1">Show</option>
+			</param>
+			<param name="show_conutry" type="radio" default="1" label="CONTACTMAP_PAY" description="CONTACTMAP_NAME_DESC">
+				<option value="0">Hide</option>
+				<option value="1">Show</option>
+			</param>
+			<param name="show_phone" type="radio" default="1" label="CONTACTMAP_TEL" description="CONTACTMAP_NAME_DESC">
+				<option value="0">Hide</option>
+				<option value="1">Show</option>
+			</param>
+			<param name="show_fax" type="radio" default="1" label="CONTACTMAP_FAX" description="CONTACTMAP_NAME_DESC">
+				<option value="0">Hide</option>
+				<option value="1">Show</option>
+			</param>
+			<param name="show_email" type="radio" default="1" label="CONTACTMAP_EMAIL" description="CONTACTMAP_NAME_DESC">
+				<option value="0">Hide</option>
+				<option value="1">Show</option>
+			</param>
+			<param name="show_email_field" type="radio" default="1" label="CONTACTMAP_EMAIL_FIELD" description="CONTACTMAP_HIDE_FIELD_DESC">
+				<option value="0">Hide</option>
+				<option value="1">Show</option>
+			</param>
+			<param name="show_web" type="radio" default="1" label="CONTACTMAP_SITE_WEB" description="CONTACTMAP_NAME_DESC">
+				<option value="0">Hide</option>
+				<option value="1">Show</option>
+			</param>
+		</advanced>
+    </state>
+</metadata>
